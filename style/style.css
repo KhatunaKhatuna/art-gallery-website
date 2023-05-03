@@ -10,7 +10,26 @@ body {
   line-height: 32px;
   font-weight: 300;
 }
-
+/* button */
+.button {
+  display: flex;
+  cursor: pointer;
+}
+.button-link {
+  font-family: "Big Shoulders Display", cursive;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 3.64px;
+  color: #fff;
+  padding: 24px 32px;
+}
+.button-icon {
+  padding: 24px;
+}
+/* end button */
 .hero {
   min-width: 320px;
   max-width: 1440px;
@@ -44,26 +63,14 @@ body {
   line-height: 28px;
   margin-bottom: 32px;
 }
-.hero-button {
-  display: flex;
-  cursor: pointer;
-}
+
 .hero-button-link {
-  font-family: "Big Shoulders Display", cursive;
-  display: inline-block;
   background-color: #151515;
-  text-transform: uppercase;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 800;
-  letter-spacing: 3.64px;
-  color: #fff;
-  padding: 24px 32px;
 }
 .hero-button-icon {
-  padding: 24px;
   background: #d5966c;
 }
+
 .hero-button:hover .hero-button-link {
   background-color: #d5966c;
   transition: all 0.4s ease-in-out;
@@ -72,15 +79,13 @@ body {
   background-color: #151515;
   transition: all 0.4s ease-in-out;
 }
-/* .hero-button::after {
-  content: "";
-  background: url(../assets/icon-arrow-right.svg) center no-repeat, #d5966c;
-  padding: 37px 24px;
-  position: absolute;
-  top: 0;
-  right: -48px;
-} */
+
 .content {
   flex: 1 1 auto;
   margin-bottom: 120px;
+}
+@media (min-width: 768px) {
+  .hero-wrapper {
+    flex-direction: row;
+  }
 }
