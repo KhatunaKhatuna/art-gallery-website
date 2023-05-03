@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/resset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Art gallery website</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <hero class="hero">
+        <div class="hero-wrapper">
+          <div class="hero-image-container">
+            <img
+              class="hero-image"
+              srcset="
+                ./assets/mobile/image-hero.jpg    375w,
+                ./assets/mobile/image-hero@2x.jpg 750w
+              "
+              sizes="(max-width: 750px) 375px"
+              alt="image-hero"
+            />
+          </div>
+          <div class="hero-text-container">
+            <div class="hero-text-container-row">
+              <h1 class="hero-title">
+                MODERN ART GALLERY
+                <!-- <img
+                  class="hero-title-logo"
+                  src="assets/logo-light.svg"
+                  alt=""
+                /> -->
+              </h1>
+              <div class="hero-location">
+                <p class="hero-text">
+                  The arts in the collection of the Modern Art Gallery all
+                  started from a spark of inspiration. Will these pieces inspire
+                  you? Visit us and find out.
+                </p>
+                <div class="hero-button">
+                  <a class="hero-button-link" href=" "> OUR LOCATION </a>
+                  <img
+                    class="hero-button-icon"
+                    src="assets/icon-arrow-right.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </hero>
+      <content class="content">
+        <div class="content-wrapper">
+          <div class="gallery">
+            <div class="intro">
+              <div class="intro-row">
+                <div class="intro textContent">
+                  <h3 class="intro-title">Your Day at the Gallery</h3>
+                  <p class="intro-text">
+                    Wander through our distinct collections and find new
+                    insights about our artists. Dive into the details of their
+                    creative process.
+                  </p>
+                </div>
+                <div class="intro-img"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </content>
+      <footer class="footer">
+        <div class="footer-row">
+          <h3>footer</h3>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
