@@ -52,6 +52,7 @@ body {
 .hero-text-container {
   padding: 0 16px;
 }
+
 .hero-title {
   font-family: "Big Shoulders Display", cursive;
   margin-bottom: 32px;
@@ -60,6 +61,12 @@ body {
   font-weight: 900;
   color: #151515;
   text-transform: uppercase;
+}
+.hero-title::before {
+  content: "";
+  float: right;
+  width: calc(100% - 200px);
+  height: 55px;
 }
 .hero-text {
   font-size: 18px;
