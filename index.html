@@ -25,13 +25,18 @@
         <div class="hero-wrapper">
           <div class="hero-image-container">
             <img
-              class="hero-image"
+              class="mobile-image hero-image"
               srcset="
                 ./assets/mobile/image-hero.jpg    375w,
                 ./assets/mobile/image-hero@2x.jpg 750w
               "
               sizes="(max-width: 750px) 375px"
               alt="image-hero"
+            />
+            <img
+              class="tablet-image"
+              src="assets/tablet/image-hero.jpg"
+              alt="tablet-image"
             />
           </div>
           <div class="hero-text-container">
@@ -82,8 +87,11 @@
               </div>
             </div>
           </div>
+
+          <img alt="" srcset="./assets/tablet/" />
         </div>
       </content>
+
       <footer class="footer">
         <div class="footer-row">
           <h3>footer</h3>

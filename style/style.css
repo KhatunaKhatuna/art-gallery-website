@@ -46,6 +46,9 @@ body {
 .hero-image {
   width: 100%;
 }
+.tablet-image {
+  display: none;
+}
 .hero-text-container {
   padding: 0 16px;
 }
@@ -87,5 +90,31 @@ body {
 @media (min-width: 768px) {
   .hero-wrapper {
     flex-direction: row;
+  }
+  .mobile-image {
+    display: none;
+  }
+  .tablet-image {
+    display: block;
+    width: 100%;
+  }
+
+  .hero-image-container {
+    margin-bottom: 0;
+    width: 57%;
+    max-width: 550px;
+  }
+  .hero-text-container {
+    padding: 0 40px 0 0;
+    width: 44.14%;
+    margin-left: -45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    margin-bottom: 180px;
   }
 }
