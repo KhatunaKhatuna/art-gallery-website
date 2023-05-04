@@ -9,7 +9,9 @@ body {
   font-size: 22px;
   line-height: 32px;
   font-weight: 300;
+  color: #444444;
 }
+
 /* button */
 .button {
   display: flex;
@@ -43,9 +45,10 @@ body {
 .hero-image-container {
   margin-bottom: 32px;
 }
-.hero-image {
+.mobile-image {
   width: 100%;
 }
+
 .tablet-image {
   display: none;
 }
@@ -93,6 +96,84 @@ body {
 .content {
   flex: 1 1 auto;
   margin-bottom: 120px;
+  padding: 0 16px;
+}
+.intro {
+  margin-bottom: 32px;
+}
+.intro-image-container {
+  margin-bottom: 25px;
+}
+.intro-title {
+  font-family: "Big Shoulders Display", cursive;
+  margin-bottom: 21px;
+  font-size: 50px;
+  line-height: 45px;
+  font-weight: 900;
+  color: #151515;
+  text-transform: uppercase;
+}
+
+.intro-title::before {
+  content: "";
+  float: right;
+  width: calc(100% - 200px);
+  height: 45px;
+}
+.intro-text {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.grid-image-container {
+  margin-bottom: 16px;
+}
+.grid-right-mobile-image {
+  margin-bottom: 16px;
+}
+.grid-right-textContent {
+  background-color: #151515;
+  color: #fff;
+  padding: 48px 24px;
+}
+.grid-right-title {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 900;
+  margin-bottom: 24px;
+  font-size: 50px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+.grid-right-title::before {
+  content: "";
+  float: right;
+  width: calc(100% - 205px);
+  height: 45px;
+}
+.grid-right-text {
+  font-size: 18px;
+  line-height: 28px;
+}
+.footer {
+  background-color: #151515;
+  padding: 48px 32px;
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 38px;
+}
+.footer-text {
+  margin-bottom: 38px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #fff;
+}
+.social-link {
+  margin-right: 20px;
+}
+.social-link:last-child {
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .hero-wrapper {
@@ -101,11 +182,14 @@ body {
   .mobile-image {
     display: none;
   }
+
   .tablet-image {
     display: block;
+    /*  */
+  }
+  .hero-tablet-image {
     width: 100%;
   }
-
   .hero-image-container {
     margin-bottom: 0;
     width: 57%;
@@ -119,9 +203,29 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .content {
+    padding: 0 39px;
+  }
+  .intro-row {
+    display: flex;
+    gap: 68px;
+  }
+  .intro-image-container {
+    order: 2;
+  }
+  .intro-textContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+  }
 }
 @media (min-width: 1024px) {
   .hero {
     margin-bottom: 180px;
+  }
+  .content {
+    margin-bottom: 180px;
+    padding: 0 165px;
   }
 }
